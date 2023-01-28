@@ -6,7 +6,32 @@ body  {
 	font-family: costumfont;;
 	margin:0;
 }
-
+.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.cover {
+  background-color: grey;
+  background-image: url(images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  background: url(images/logo.png);
+  background-size: cover;
+  padding: 10%;
+  height: 10px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 20px black;
+}
 /*
 @media only screen and (min-width: 760px) {
   body {
