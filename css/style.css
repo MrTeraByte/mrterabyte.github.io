@@ -1,0 +1,16 @@
+@font-face {
+  font-family: costumfont;
+  src: url(fonts/JosefinSans-Regular.ttf);
+}
+body  {
+	font-family: costumfont;;
+	margin:0;
+}
+
+/*
+@media only screen and (min-width: 760px) {
+  body {
+    background-color: lightblue;
+  }
+}
+*/
