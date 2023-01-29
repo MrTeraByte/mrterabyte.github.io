@@ -6,6 +6,7 @@ body  {
 	font-family: costumfont;;
 	margin:0;
 }
+/* -- */
 .main {
   position: fixed;
   top: 0;
@@ -13,6 +14,7 @@ body  {
   right: 0;
   left: 0;
 }
+/*style for the cover and logo */
 .cover {
   background-color: grey;
   background-image: url(images/bg.png);
@@ -31,6 +33,44 @@ body  {
   height: 10px;
   margin-bottom: 50px;
   box-shadow: 0 0 20px black;
+}
+
+/* title text and bio */
+.text-section {
+ border-radius: 20px 20px 0 0;
+ margin-top: -40px;
+ box-shadow: 0 0 10px black;
+}
+.title {
+ background: #13272c;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ border-radius: 20px 20px 0 0;
+}
+.title-text {
+  padding: 10px;
+  padding-top: 20px;
+}
+#title-name {
+  font-size: 40px;
+}
+#title-bio {
+  color: #a6a6a6;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 5px;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+#the-line {
+  background: #a6a6a6;
+  width: 40px;
+  height: 2px;
+  border-radius: 5%;
+  margin: auto;
 }
 /*
 @media only screen and (min-width: 760px) {
