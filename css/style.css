@@ -72,6 +72,25 @@ body  {
   border-radius: 5%;
   margin: auto;
 }
+
+/* the tags */
+.tags-div {
+  display: grid;
+  text-align: center;
+  margin-top: 10px;
+}
+.tags {
+  display: inline-block;
+  margin-top: 3px;
+}
+.tags-span {
+  background: #50787a;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px;
+  padding-inline: 5px;
+}
 /*
 @media only screen and (min-width: 760px) {
   body {
