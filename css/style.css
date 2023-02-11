@@ -91,6 +91,25 @@ body  {
   padding: 1px;
   padding-inline: 5px;
 }
+/*building up msg*/
+.building {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 50px;
+}
+.building i {
+  font-size: 26px;
+  border: 1px dotted white;
+  border-radius: 50%;
+  padding: 8px;
+}
+.building span {
+  font-size: 12px;
+}
 /*
 @media only screen and (min-width: 760px) {
   body {
