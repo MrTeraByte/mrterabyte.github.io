@@ -11,17 +11,25 @@ $(document).ready(() => {
   if(destination() == "about" || destination () == "contact"){
     console.log(`you are accessing ${destination()}`);
     
-    let aboutAnim = anime.timeline({});
+  /*  let aboutAnim = anime.timeline({});
     
     aboutAnim.add({
       targets: [".main"],
       delay: 1000,
       top: "0px",
     });
-    
+    */
   }else{
     
     let intro = anime.timeline({});
+   
+   //fadeout the loading msg
+    intro.add({
+       targets: [".load"],
+       duration: 1000,
+       delay: 500,
+       opacity: 0,
+   })
    
    //animation for the main element
     intro.add({
