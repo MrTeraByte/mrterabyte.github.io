@@ -1,6 +1,6 @@
 @font-face {
   font-family: costumfont;
-  src: url(fonts/JosefinSans-Regular.ttf);
+  src: url(../fonts/JosefinSans-Regular.ttf);
 }
 body  {
 	font-family: costumfont;;
@@ -31,7 +31,7 @@ body  {
 /*style for the cover and logo */
 .cover {
   background-color: grey;
-  background-image: url(images/bg.png);
+  background-image: url(../images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -41,7 +41,7 @@ body  {
   align-items: center;
 }
 .logo {
-  background: url(images/logo.png);
+  background: url(../images/logo.png);
   background-size: cover;
   padding: 10%;
   height: 10px;
