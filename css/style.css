@@ -43,7 +43,11 @@ body  {
   align-items: center;
 }
 .logo {
+<<<<<<< HEAD
   background: url(../images/logo-removedbg.png);
+=======
+  background: url(../images/logo.png);
+>>>>>>> 48b63e382b59822bbc62349e9ef9369ba708e411
   background-size: cover;
   padding: 10%;
   height: 10px;
