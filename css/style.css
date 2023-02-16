@@ -3,6 +3,7 @@
   src: url(../fonts/JosefinSans-Regular.ttf);
 }
 body  {
+        background: #13272c;
 	font-family: costumfont;;
 	margin:0;
 }
