@@ -17,7 +17,6 @@ $(document).ready(() => {
       targets: [".main"],
       delay: 1000,
       top: "0px",
-      
     });
     
   }else{
