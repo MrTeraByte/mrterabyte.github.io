@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  console.log("ready");
+  console.log("loaded script");
   
   //get current window location
   let destination = function(){
@@ -8,17 +8,38 @@ $(document).ready(() => {
   }
   
   //Show content based on window location
-  if(destination() == "about" || destination () == "contact"){
+  if(destination() == "about"){
     console.log(`you are accessing ${destination()}`);
     
-  /*  let aboutAnim = anime.timeline({});
-    
+    //timeline for about page animations
+    let aboutAnim = anime.timeline({});
+   
+   //display the about section first
+    $(".about").css({"display":"block"});
+   
+   //start of the animations
     aboutAnim.add({
-      targets: [".main"],
-      delay: 1000,
-      top: "0px",
-    });
-    */
+       targets: [".load"], //removing the loading massage
+       duration: 1000,
+       delay: 500,
+       opacity: 0,
+    }).add({
+       targets: [".about"], //show the about section
+       opacity: 1,
+    }).add({
+      targets: [".lines span"], //animate the lines
+      width: ["0px","30px"]
+    }).add({
+       targets: [".greetings",".name",".description"], //fade in the texts one by one
+       opacity: [0,1],
+          "lineHeight": ["10px","20px"],
+       duration: 1000,
+       delay: anime.stagger(200),
+    }).add({
+      targets: [".contactLink",".go-back"], //fadein the bottom 
+      opacity: [0,1],
+    })
+    
   }else{
     
     let intro = anime.timeline({});
