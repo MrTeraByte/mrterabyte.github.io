@@ -129,9 +129,9 @@ $(document).ready(() => {
    
   }
   
-  //Functionality for the links
+  /*Functionality for the links
   $(".title-text a").on("click",() => {
-    window.location.href = "http://localhost:8158/index.html?dist=about";
-  })
+    window.location.href = `${window.location.hostbame}/index.html?dist=about`;
+  })*/
   
 });
