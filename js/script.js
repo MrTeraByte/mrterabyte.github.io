@@ -124,6 +124,13 @@ $(document).ready(() => {
           translateX: ["50px","0px"]
         })
       },
+    complete: () => {
+      anime({
+        targets: [".other-pages a"],
+        delay: anime.stagger(20),
+        opacity: [0,1],
+      })
+    }
     })
   
    

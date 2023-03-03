@@ -2,6 +2,10 @@
   font-family: costumfont;
   src: url(../fonts/JosefinSans-Regular.ttf);
 }
+@font-face {
+  font-family: space;
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
 body  {
   background: #13272c;
 	font-family: costumfont;;
@@ -146,13 +150,25 @@ body  {
 .other-pages {
   color: white;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 70px;
 }
 .other-pages a {
+  background: #0A171F;
   color: white;
-  text-decoration: underline;
-  font-family: "Monospace",'Sans-Serif';
-  font-size: 14px;
+  font-family: space;
+  font-size: 12px;
+  text-decoration: none;
+  word-spacing: -3px;
+  word-break: break-all;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 2px;
+	border-radius: 30px;
+	box-shadow: 0 0 5px #0A171F;
+	opacity: 0;
+}
+.other-pages a > i {
+  color: white;
 }
 /*the about section*/
 .about {
