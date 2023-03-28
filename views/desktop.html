@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr.TeraByte</title>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no,user-scalable=no">
+
+<!-- scripts -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<!-- styles -->
+<style type="text/css">
+@font-face {
+  font-family: josefin;
+  src: url(fonts/JosefinSans-Regular.ttf);
+}
+body  {
+	background: #13272c;
+	font-family: josefin;
+	margin:0;
+}
+.desktop-bg {
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	background-position: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(50px);
+}
+.desktop-main {
+  width: 350px;
+  height: 700px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 10px black;
+}
+.desktop-main iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
+</head>
+<body>
+ 
+<div class="desktop-bg"></div>
+
+<div class="desktop-main">
+    <iframe src="https://mrterabyte.github.io/"></iframe>
+</div>
+
+<script type="text/javascript">
+$(document).ready(() => {
+  
+  const deviceType = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop";
+  
+  if(deviceType == "mobile"){
+    console.log("redirecting to mobile view");
+    //window.location.href = "https://mrterabyte.github.io";
+  }
+
+});
+</script>
+
+</body>
+</html>
