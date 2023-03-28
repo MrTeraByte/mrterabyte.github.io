@@ -1,6 +1,15 @@
 $(document).ready(() => {
   console.log("loaded script");
   
+  const deviceType = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop";
+
+  console.log(`loaded on ${deviceType}`);
+  
+  if(deviceType == "desktop"){
+    window.location.href = "https://mrterabyte.github.io/views/desktop.html";
+  }
+  
+  
   //get current window location
   let destination = function(){
     let url = new URL(window.location.href);
