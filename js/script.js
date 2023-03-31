@@ -1,14 +1,13 @@
 $(document).ready(() => {
   console.log("loaded scripts");
   
-  // Get the user agent string
-  var userAgent = navigator.userAgent.toLowerCase();
+ let userAgent = navigator.userAgent.toLowerCase();
 
-  // Check if the user is on an iPad or desktop device
-  if (userAgent.indexOf('ipad') !== -1 || userAgent.indexOf('macintosh') !== -1) {
-  // Redirect to a different page for iPad and desktop users
-  console.log(`${window.location.href} loaded on big screen successfully. \n Redirecting to desktop view...`)
-  window.location.href = 'https://mrterabyte.github.io/views/desktop.html';
+  // Check if the user is on a desktop or iPad device
+  if (userAgent.indexOf('macintosh') !== -1 || (userAgent.indexOf('ipad') !== -1 && userAgent.indexOf('mobile') === -1)) {
+    // Redirect to a different page for desktop and iPad users
+    console.log("Loaded on big screens.")
+    window.location.href = "https://mrterabyte.github.io/desktop.html";
   }
   
   //get current window location
