@@ -2,12 +2,12 @@ $(document).ready(() => {
   console.log("loaded scripts");
   
  let userAgent = navigator.userAgent.toLowerCase();
-
+ 
   // Check if the user is on a desktop or iPad device
-  if (userAgent.indexOf('macintosh') !== -1 || (userAgent.indexOf('ipad') !== -1 && userAgent.indexOf('mobile') === -1)) {
+  if (userAgent.indexOf('mobile') === -1) {
     // Redirect to a different page for desktop and iPad users
-    console.log("Loaded on big screens.")
-    window.location.href = "https://mrterabyte.github.io/desktop.html";
+    console.log("Loaded on big screens ")
+    window.location.href = "https://mrterabyte.github.io/views/desktop.html";
   }
   
   //get current window location
