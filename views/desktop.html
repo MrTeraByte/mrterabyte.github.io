@@ -20,82 +20,76 @@ body  {
 	font-family: josefin;
 	margin:0;
 }
-
-/*background*/
-.desktop-bg {
-	background-image: url(../images/bg.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-  position: absolute;
+.wrapper {
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  filter: blur(50px);
 }
-
-/*style for the iframe */
-.desktop-main {
-  width: 400px;
-  height: 800px;
-  box-shadow: 0 0 10px black;
-  overflow: hidden;
+.wrapper::before {
+  content: "";
+  background: url(images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(20px);
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.desktop-main::after {
-  content: "";
-  position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  border: 20px solid black;
-  border-radius: 30px;
+  z-index: -1;
 }
-
-/*style for the apologize massage */
-.apologize-msg {
-  color: white;
+.wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 50%;
-  position: fixed;
-  bottom: 0%;
-  transform: translateX(50%);
+  height: 100vh;
 }
-.apologize-msg span {
+.content iframe {
+  width: 375px;
+  height: 667px;
+  box-shadow: 0 0 20px black;
+}
+.texts {
+  color: #a6a6a6;
+  width: 50%;
+  text-align: center;
+}
+.texts span {
   background: #a6a6a6;
   width: 40px;
   height: 2px;
-  border-radius: 5%;
   margin: auto;
   margin-top: 20px;
+  display: block;
 }
 </style>
 
 </head>
 <body>
- 
- <!-- the background image -->
-<div class="desktop-bg"></div>
 
-<!-- adding the mobile site with iframe -->
-<iframe class="desktop-main" src="https://mrterabyte.github.io/" scrolling="no" frameborder="0"></iframe>
-
-<!--apologize massage -->
-<div class="apologize-msg">
-  <span></span>
-  <p>
-     Apologizing for any inconvenience,This website is optimized for mobile devices only. I hope to provide a desktop version in the future.
-  </p>
+<div class="wrapper">
+  
+  <div class="content">
+    <iframe src="https://mrterabyte.github.io" scrolling="no" frameborder="0"></iframe>
+    
+    <div class="texts">
+      <span></span>
+      <p>
+        Apologizing for any inconvenience,This website is optimized for mobile devices only. I hope to provide a desktop version in the future.
+      </p>
+    </div>
+    
+  </div>
+  
 </div>
 
 <script type="text/javascript">
