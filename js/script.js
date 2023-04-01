@@ -1,14 +1,4 @@
-$(document).ready(() => {
-  console.log("loaded scripts");
-  
- let userAgent = navigator.userAgent.toLowerCase();
- 
-  // Check if the user is on a desktop or iPad device
-  if (userAgent.indexOf('mobile') === -1) {
-    // Redirect to a different page for desktop and iPad users
-    console.log("Loaded on big screens ")
-    window.location.href = "https://mrterabyte.github.io/views/desktop.html";
-  }
+$(document).ready( () => {
   
   //get current window location
   let destination = function(){
@@ -28,11 +18,6 @@ $(document).ready(() => {
    
    //start of the animations
     aboutAnim.add({
-       targets: [".load"], //removing the loading massage
-       duration: 1000,
-       delay: 500,
-       opacity: 0,
-    }).add({
        targets: [".about"], //show the about section
        opacity: 1,
     }).add({
@@ -52,14 +37,6 @@ $(document).ready(() => {
   }else{
     
     let intro = anime.timeline({});
-   
-   //fadeout the loading msg
-    intro.add({
-       targets: [".load"],
-       duration: 1000,
-       delay: 500,
-       opacity: 0,
-   })
    
    //animation for the main element
     intro.add({
@@ -142,8 +119,6 @@ $(document).ready(() => {
     }
     })
   
-   
   }
-  
-  
+
 });
