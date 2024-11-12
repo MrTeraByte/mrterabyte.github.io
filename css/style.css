@@ -2,37 +2,41 @@
   font-family: josefin;
   src: url(../fonts/JosefinSans-Regular.ttf);
 }
+
 @font-face {
   font-family: space;
   src: url(../fonts/SpaceMono-Regular.ttf);
 }
-body  {
+
+body {
   background: #13272c;
-	font-family: josefin;
-	margin:0;
+  font-family: josefin;
+  margin: 0;
 }
 
 /* resize warning */
-.resize-warning{
+.resize-warning {
   background: black;
   color: white;
-	display:flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items:center;
-	text-align: center;
-	position:fixed;
-	top: 0;
-	bottom:0;
-	right:0;
-	left:0;
-	z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
-.resize-warning-icon i{
-	  font-size: 5em;
-  }
-.resize-warning-text h2{
-	  font-size:smaller;
+
+.resize-warning-icon i {
+  font-size: 5em;
+}
+
+.resize-warning-text h2 {
+  font-size: smaller;
 }
 
 /* -- */
@@ -45,6 +49,7 @@ body  {
   right: 0;
   left: 0;
 }
+
 /*style for the cover and logo */
 .cover {
   background-color: grey;
@@ -57,6 +62,7 @@ body  {
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   background: url(../images/logo-removedbg.png);
   background-size: cover;
@@ -67,33 +73,39 @@ body  {
 
 /* title text and bio */
 .text-section {
- border-radius: 20px 20px 0 0;
- padding-bottom: 50%;
- position: absolute;
- top: 35%;
- box-shadow: 0 0 10px black;
- transform: translate(0,150%);
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 50%;
+  position: absolute;
+  top: 35%;
+  box-shadow: 0 0 10px black;
+  transform: translate(0, 150%);
 }
+
 .title {
- background: #13272c;
- color: white;
- display: flex;
- flex-direction: column;
- text-align: center;
- border-radius: 20px 20px 0 0;
+  background: #13272c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
 }
+
 .title-text {
   padding: 10px;
   padding-top: 20px;
   opacity: 0;
 }
+
 .title-text a {
   color: white;
   text-decoration: none;
 }
+
 #title-name {
   font-size: 40px;
 }
+
 #title-bio {
   color: #a6a6a6;
   font-size: 13px;
@@ -101,7 +113,10 @@ body  {
   padding: 5px;
   margin-top: -15px;
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
+}
+#location {
+  color: gray;
 }
 #the-line {
   background: #a6a6a6;
@@ -118,10 +133,12 @@ body  {
   text-align: center;
   margin-top: 10px;
 }
+
 .tags {
   display: inline-block;
   margin-top: 3px;
 }
+
 .tags-span {
   background: #50787a;
   color: white;
@@ -132,12 +149,14 @@ body  {
   display: inline-block;
   opacity: 0;
 }
+
 /* other oages link */
 .other-pages {
   color: white;
   text-align: center;
   margin-top: 70px;
 }
+
 .other-pages a {
   background: #0A171F;
   color: white;
@@ -149,13 +168,15 @@ body  {
   display: inline-block;
   padding: 5px;
   margin-top: 2px;
-	border-radius: 30px;
-	box-shadow: 0 0 5px #0A171F;
-	opacity: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 5px #0A171F;
+  opacity: 0;
 }
-.other-pages a > i {
+
+.other-pages a>i {
   color: white;
 }
+
 /*the about section*/
 .about {
   background: url(../images/bg.png);
@@ -172,6 +193,7 @@ body  {
   right: 0;
   z-index: 1;
 }
+
 /* the greeting text */
 .greetings {
   width: 80%;
@@ -179,14 +201,17 @@ body  {
   flex-direction: column;
   font-size: 13px;
 }
+
 .greetings span:last-child {
-  transform: translate(15px,5px);
+  transform: translate(15px, 5px);
 }
+
 /*the lines on the right of greetings */
 .lines {
   float: right;
-  transform: translate(0,-30px);
+  transform: translate(0, -30px);
 }
+
 .lines span {
   background: #D9D9D9;
   width: 20px;
@@ -194,17 +219,21 @@ body  {
   display: block;
   border-radius: 5px;
 }
+
 .lines span:first-child {
-  transform: translate(-20px,0px);
+  transform: translate(-20px, 0px);
 }
+
 .lines span:last-child {
-  transform: translate(0,10px);
+  transform: translate(0, 10px);
 }
+
 /*the name */
 .name {
   font-size: 36px;
   margin-top: 10px;
 }
+
 /* the description*/
 .description {
   color: #D9D9D9;
@@ -212,6 +241,7 @@ body  {
   line-height: 20px;
   font-size: 13px;
 }
+
 /* contact link and the go back link */
 .contactLink {
   border: 1px solid white;
@@ -219,10 +249,13 @@ body  {
   position: absolute;
   bottom: 20px;
 }
-.go-back > a , .contactLink > a{
+
+.go-back>a,
+.contactLink>a {
   color: white;
   text-decoration: none;
 }
+
 .go-back {
   position: absolute;
   bottom: 25px;
