@@ -166,8 +166,8 @@ body {
   word-spacing: -3px;
   word-break: break-all;
   display: inline-block;
-  padding: 5px;
-  margin-top: 2px;
+  padding: 8px;
+  margin: 5px;
   border-radius: 30px;
   box-shadow: 0 0 5px #0A171F;
   opacity: 0;
