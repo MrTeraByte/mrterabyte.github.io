@@ -246,6 +246,12 @@ body {
   font-size: 13px;
 }
 
+/* Description spans */
+.description span {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
 /* contact link and the go back link */
 .contactLink {
   border: 1px solid white;
