@@ -16,17 +16,25 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- preloading the background image -->
+    <link rel="preload" href="../images/bg.png" as="image" />
+
     <!-- styles -->
     <style type="text/css">
-      @font-face {
-        font-family: josefin;
-        src: url(../fonts/JosefinSans-Regular.ttf);
-      }
       body {
         background: #13272c;
-        font-family: josefin;
+        font-family: "Josefin Sans", sans-serif;
         margin: 0;
       }
+
       .wrapper {
         position: relative;
         top: 0;
@@ -34,6 +42,7 @@
         left: 0;
         right: 0;
       }
+
       .wrapper::before {
         content: "";
         background: url(../images/bg.png);
@@ -49,10 +58,12 @@
         right: 0;
         z-index: -1;
       }
+
       .wrapper > * {
         position: relative;
         z-index: 1;
       }
+
       .content {
         display: flex;
         flex-direction: column;
@@ -60,16 +71,19 @@
         align-items: center;
         height: 100vh;
       }
+
       .content iframe {
         width: 375px;
         height: 667px;
         box-shadow: 0 0 20px black;
       }
+
       .texts {
         color: #a6a6a6;
         width: 50%;
         text-align: center;
       }
+
       .texts span {
         background: #a6a6a6;
         width: 40px;
@@ -80,6 +94,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="wrapper">
       <div class="content">
