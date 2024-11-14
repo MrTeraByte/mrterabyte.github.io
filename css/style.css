@@ -1,38 +1,32 @@
-@font-face {
-  font-family: josefin;
-  src: url(../fonts/JosefinSans-Regular.ttf);
-}
-@font-face {
-  font-family: space;
-  src: url(../fonts/SpaceMono-Regular.ttf);
-}
-body  {
+body {
   background: #13272c;
-	font-family: josefin;
-	margin:0;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
 }
 
 /* resize warning */
-.resize-warning{
+.resize-warning {
   background: black;
   color: white;
-	display:flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items:center;
-	text-align: center;
-	position:fixed;
-	top: 0;
-	bottom:0;
-	right:0;
-	left:0;
-	z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
-.resize-warning-icon i{
-	  font-size: 5em;
-  }
-.resize-warning-text h2{
-	  font-size:smaller;
+
+.resize-warning-icon i {
+  font-size: 5em;
+}
+
+.resize-warning-text h2 {
+  font-size: smaller;
 }
 
 /* -- */
@@ -45,6 +39,7 @@ body  {
   right: 0;
   left: 0;
 }
+
 /*style for the cover and logo */
 .cover {
   background-color: grey;
@@ -57,6 +52,7 @@ body  {
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   background: url(../images/logo-removedbg.png);
   background-size: cover;
@@ -67,33 +63,40 @@ body  {
 
 /* title text and bio */
 .text-section {
- border-radius: 20px 20px 0 0;
- padding-bottom: 50%;
- position: absolute;
- top: 35%;
- box-shadow: 0 0 10px black;
- transform: translate(0,150%);
+  width: 100%;
+  height: 100vw;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 50%;
+  position: absolute;
+  top: 35%;
+  box-shadow: 0 0 10px black;
+  transform: translate(0, 150%);
 }
+
 .title {
- background: #13272c;
- color: white;
- display: flex;
- flex-direction: column;
- text-align: center;
- border-radius: 20px 20px 0 0;
+  background: #13272c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
 }
+
 .title-text {
   padding: 10px;
   padding-top: 20px;
   opacity: 0;
 }
+
 .title-text a {
   color: white;
   text-decoration: none;
 }
+
 #title-name {
   font-size: 40px;
 }
+
 #title-bio {
   color: #a6a6a6;
   font-size: 13px;
@@ -101,8 +104,13 @@ body  {
   padding: 5px;
   margin-top: -15px;
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
 }
+
+#location {
+  color: gray;
+}
+
 #the-line {
   background: #a6a6a6;
   width: 40px;
@@ -118,10 +126,12 @@ body  {
   text-align: center;
   margin-top: 10px;
 }
+
 .tags {
   display: inline-block;
   margin-top: 3px;
 }
+
 .tags-span {
   background: #50787a;
   color: white;
@@ -132,30 +142,37 @@ body  {
   display: inline-block;
   opacity: 0;
 }
+
 /* other oages link */
 .other-pages {
+  width: 85%;
   color: white;
   text-align: center;
   margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .other-pages a {
-  background: #0A171F;
+  background: #0a171f;
   color: white;
-  font-family: space;
+  font-family: "Space Mono", monospace;
   font-size: 12px;
   text-decoration: none;
   word-spacing: -3px;
   word-break: break-all;
   display: inline-block;
-  padding: 5px;
-  margin-top: 2px;
-	border-radius: 30px;
-	box-shadow: 0 0 5px #0A171F;
-	opacity: 0;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px #0a171f;
+  opacity: 0;
 }
+
 .other-pages a > i {
   color: white;
 }
+
 /*the about section*/
 .about {
   background: url(../images/bg.png);
@@ -172,6 +189,7 @@ body  {
   right: 0;
   z-index: 1;
 }
+
 /* the greeting text */
 .greetings {
   width: 80%;
@@ -179,39 +197,53 @@ body  {
   flex-direction: column;
   font-size: 13px;
 }
+
 .greetings span:last-child {
-  transform: translate(15px,5px);
+  transform: translate(15px, 5px);
 }
+
 /*the lines on the right of greetings */
 .lines {
   float: right;
-  transform: translate(0,-30px);
+  transform: translate(0, -30px);
 }
+
 .lines span {
-  background: #D9D9D9;
+  background: #d9d9d9;
   width: 20px;
   height: 2.5px;
   display: block;
   border-radius: 5px;
 }
+
 .lines span:first-child {
-  transform: translate(-20px,0px);
+  transform: translate(-20px, 0px);
 }
+
 .lines span:last-child {
-  transform: translate(0,10px);
+  transform: translate(0, 10px);
 }
+
 /*the name */
 .name {
   font-size: 36px;
   margin-top: 10px;
 }
+
 /* the description*/
 .description {
-  color: #D9D9D9;
+  color: #d9d9d9;
   margin-top: -5px;
   line-height: 20px;
   font-size: 13px;
 }
+
+/* Description spans */
+.description span {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
 /* contact link and the go back link */
 .contactLink {
   border: 1px solid white;
@@ -219,14 +251,57 @@ body  {
   position: absolute;
   bottom: 20px;
 }
-.go-back > a , .contactLink > a{
+
+.go-back > a,
+.contactLink > a {
   color: white;
   text-decoration: none;
 }
+
 .go-back {
   position: absolute;
   bottom: 25px;
   right: 20px;
+}
+
+/* projects section */
+.projects {
+  background: url(../images/bg.png);
+  color: white;
+  padding: 5%;
+  padding-top: 10%;
+  padding-inline: 10%;
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.projects-desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.projects-desc span {
+  display: block;
+  text-decoration: none;
+  word-break: break-word;
+  font-size: small;
+  margin-left: 8px;
+}
+.projects-desc span:first-child {
+  font-size: x-large;
+  margin-left: 0;
+}
+.projects-desc span:nth-child(2) {
+  font-size: large;
+}
+.projects-desc a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
 }
 
 @media only screen and (max-width: 760px) {
