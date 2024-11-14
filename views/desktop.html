@@ -3,108 +3,118 @@
   <head>
     <title>Mr.TeraByte</title>
 
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no,user-scalable=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no,user-scalable=no"
+    />
 
-<!-- scripts -->
-      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
-<!-- styles -->
-<style type="text/css">
-@font-face {
-  font-family: josefin;
-  src: url(../fonts/JosefinSans-Regular.ttf);
-}
-body  {
-	background: #13272c;
-	font-family: josefin;
-	margin:0;
-}
-.wrapper {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.wrapper::before {
-  content: "";
-  background: url(../images/bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: blur(20px);
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-.wrapper > * {
-  position: relative;
-  z-index: 1;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.content iframe {
-  width: 375px;
-  height: 667px;
-  box-shadow: 0 0 20px black;
-}
-.texts {
-  color: #a6a6a6;
-  width: 50%;
-  text-align: center;
-}
-.texts span {
-  background: #a6a6a6;
-  width: 40px;
-  height: 2px;
-  margin: auto;
-  margin-top: 20px;
-  display: block;
-}
-</style>
+    <!-- styles -->
+    <style type="text/css">
+      @font-face {
+        font-family: josefin;
+        src: url(../fonts/JosefinSans-Regular.ttf);
+      }
+      body {
+        background: #13272c;
+        font-family: josefin;
+        margin: 0;
+      }
+      .wrapper {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .wrapper::before {
+        content: "";
+        background: url(../images/bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: blur(20px);
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+      .wrapper > * {
+        position: relative;
+        z-index: 1;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .content iframe {
+        width: 375px;
+        height: 667px;
+        box-shadow: 0 0 20px black;
+      }
+      .texts {
+        color: #a6a6a6;
+        width: 50%;
+        text-align: center;
+      }
+      .texts span {
+        background: #a6a6a6;
+        width: 40px;
+        height: 2px;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <iframe
+          src="/views/mobile.html"
+          scrolling="no"
+          frameborder="0"
+        ></iframe>
 
-</head>
-<body>
-
-<div class="wrapper">
-  
-  <div class="content">
-    <iframe src="/views/mobile.html" scrolling="no" frameborder="0"></iframe>
-    
-    <div class="texts">
-      <span></span>
-      <p>
-        Apologizing for any inconvenience,This website is optimized for mobile devices only. I hope to provide a desktop version in the future.
-      </p>
+        <div class="texts">
+          <span></span>
+          <p>
+            Apologizing for any inconvenience,This website is optimized for
+            mobile devices only. I hope to provide a desktop version in the
+            future.
+          </p>
+        </div>
+      </div>
     </div>
-    
-  </div>
-  
-</div>
 
-<script type="text/javascript">
-$(document).ready(() => {
-  
-  /*check device type */
-  const deviceType = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop";
-  
-  if(deviceType == "mobile"){
-    console.log("Mobile screen detected\nredirecting to mobile view...");
-    window.location.href = "https://mrterabyte.github.io/";
-  }
+    <script type="text/javascript">
+      $(document).ready(() => {
+        /*check device type */
+        const deviceType =
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+            ? "mobile"
+            : "desktop";
 
-});
-</script>
-
-</body>
+        if (deviceType == "mobile") {
+          console.log("Mobile screen detected\nredirecting to mobile view...");
+          window.location.href = "https://mrterabyte.github.io/";
+        }
+      });
+    </script>
+  </body>
 </html>
